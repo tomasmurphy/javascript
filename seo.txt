@@ -1,0 +1,62 @@
+Cambio de nombre de carpeta de template a proyectos para que quede mejor la ruta. 
+CV en la carpeta principal para que quede nombredepagina.CV
+MAP en _variables.scss con la paleta de colores y aplicada en navYfooter
+Mixin en _variables.scss con las media query de desktop y mobile y aplicadas en todos los scss. 
+Extend en _proyectos.scss linea 203. No es que me cambio el rumbo del proyecto pero no tenia muchas 
+clases donde usarlo. Entiendo que si va a ser util de arranque en algun proximo proyecto.  
+
+***Index***
+Titulo: Paz Secundini - página de artista
+Descripcion: "Arte naturalista. Obras y procesos."
+Palabras clave: "arte, artesania, fotografia, revelado organico, estenopeica, analogica, ceramica, escultura, bellas artes"
+Autor: "Tomás Murphy"
+Copyright: "Todos los derechos reservados"
+Agregado de alt a todas las imagenes. 
+
+***CV***
+Titulo: Paz Secundini - Curriculum vitae
+Descripcion: "Curriculum vitae de Paz Secundini"
+Palabras clave: "UNR, universidad nacional de rosario, licencia en bellas artes, ingles, cursos, muestras, exposiciones, talleres, arte, artesania, fotografia, tintes naturales, revelado organico, estenopeica, analogica, ceramica, escultura, bellas artes, irlanda, estudios irlandeses, umepay, almacen de arte contemporaneo"
+Autor: "Tomás Murphy"
+Copyright: "Todos los derechos reservados"
+Agregado de alt a todas las imagenes. 
+
+***Parques nacionales***
+Titulo: Paz Secundini - Parques nacionales
+Descripcion: "Serie de eculturas ceramicas en pequeño formato"
+Palabras claves: "Esculturas, ceramica, pequeña formato, bellas artes, parques nacionales, sur, alaska, isladia"/>
+Autor: "Tomás Murphy"
+Copyright: "Todos los derechos reservados"
+Agregado de alt a todas las imagenes. 
+
+***Colour me in***
+Titulo: Paz Secundini - Colour me in
+Descripcion: "Tintes naturales sobre tela"
+Palabras claves: "tintes naturales, tela, shibori"
+Autor: "Tomás Murphy"
+Copyright: "Todos los derechos reservados"
+Agregado de alt a todas las imagenes. 
+
+***Suelos del sur***
+Titulo: Paz Secundini - Suelos del sur
+Descripcion: Tintes naturales sobre tela
+Palabras claves: "tintes naturales, tela, shibori"
+Autor: "Tomás Murphy"
+Copyright: "Todos los derechos reservados"
+Agregado de alt a todas las imagenes. 
+
+***Los paisajes del frio***
+Titulo: Paz Secundini - Los paisajes del frio
+Descripcion: Fotos analogicas del sur argentino
+Palabras claves: Fotografia, analogica, experimental, sur argentino, ushuaia, canal de beagle, faro del fin del mundo, tren del fin del mundo
+Autor: "Tomás Murphy"
+Copyright: "Todos los derechos reservados"
+Agregado de alt a todas las imagenes. 
+
+***Revelados organicos***
+Titulo: Paz Secundini - Revelados organicos
+Descripcion: Experimentación e investigación de reveladores a base de plantas para película fotográfica blanco y negro.
+Palabras claves: Fotografia, analogica, experimental, te negro, oregano, caffenol, ilford pan 100, camara zenit
+Autor: "Tomás Murphy"
+Copyright: "Todos los derechos reservados"
+Agregado de alt a todas las imagenes. 

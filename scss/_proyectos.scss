@@ -1,0 +1,569 @@
+@import "_variables.scss";
+/* CV  */
+#cv {
+  background-color: $blanco;
+  font-family: "Josefin";
+  padding-bottom: $footer;
+  & h1 {
+    background-color: $azul;
+    color: $blanco;
+    font-family: "Josefin";
+    padding: 1%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+  }
+  & h3 {
+    color: $azul;
+    font-family: "Josefin";
+    padding-left: 5%;
+    font-size: 1.3rem;
+    width: 100%;
+    &:hover {
+      color: $gris;
+      opacity: 0.9;
+    }
+    i {
+      color: $azul;
+    }
+  }
+  & hr {
+    color: $azul;
+  }
+  & p {
+    background-color: $blanco;
+    color: $azul;
+    font-family: "Josefin";
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 1%;
+    @include desktop {
+      & {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  & a {
+    color: $blanco;
+    font-family: "Josefin";
+    text-align: left;
+    font-size: 1rem;
+    &:hover {
+      color: #7e8288;
+    }
+    @include desktop {
+      & {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  & .p {
+    color: $blanco;
+    font-family: "Josefin";
+    text-align: left;
+    font-size: 1rem;
+    &:hover {
+      color: #7e8288;
+    }
+    @include desktop {
+      & {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .imgRedonda {
+    margin-left: 5%;
+    margin-bottom: 2rem;
+  }
+  .fondoAzul {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: $azul;
+    width: 100%;
+    height: 2.5rem;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    @include desktop {
+      align-items: center;
+    }
+  }
+  i {
+    color: $blanco;
+    font-family: "Josefin";
+    font-size: 1.7rem;
+    line-height: normal;
+    &:hover {
+      color: #7e8288;
+    }
+    @include desktop {
+      & {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .imgRedonda.floatRigth {
+    float: none;
+    @include desktop {
+      float: right;
+      margin-right: 10%;
+    }
+  }
+}
+/* PARQUES NACIONALES */
+#parquesNacionales {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  background-color: $blanco;
+  text-decoration-color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & h2 {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+  }
+  & a {
+    font-size: 0.8rem;
+    color: $blanco;
+    padding: 0.8rem;
+    font-family: "Josefin";
+  }
+  & .centrarImagenes {
+    justify-self: center;
+  }
+  & figcaption {
+    font-size: 1.5rem;
+    color: $azul;
+    font-weight: bold;
+  }
+  & img {
+    width: 100%;
+  }
+}
+/* COLOUR ME IN */
+#colourMeIn {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  background-color: $blanco;
+  text-decoration-color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & p {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-bottom: 1%;
+  }
+  & h2 {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+  }
+  & div {
+    margin: 0;
+    padding: 0;
+  }
+}
+/* SUELOS DEL SUR */
+#suelosDelSur {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  background-color: $blanco;
+  text-decoration-color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & p {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    @include desktop {
+      & {
+        padding-top: 3%;
+        padding-left: 0%;
+        padding-right: 0%;
+      }
+    }
+  }
+  & .p {
+    color: $azul;
+  }
+  & h2 {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+  }
+  & img {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 20%;
+    @include desktop {
+      & {
+        padding-right: 3%;
+        padding-left: 3%;
+      }
+    }
+  }
+  & iframe {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    @include desktop {
+      & {
+        padding-right: 2.1%;
+        padding: 2.1%;
+      }
+    }
+  }
+  @include desktop {
+    & .cajaFigure {
+      padding-right: 3%;
+      padding-left: 3%;
+      align-self: center;
+    }
+    & .imgDefor {
+      @extend .cajaFigure;
+      width: 100%;
+    }
+  }
+}
+/* LOS PAISAJES DEL FRIO */
+#losPaisajesDelFrio {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  background-color: $azul;
+  text-decoration-color: $blanco;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & p {
+    color: $azul;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 0;
+    width: 100%;
+    & .letraComun {
+      font-family: "Serafin";
+      font-size: 0.8rem;
+      color: $gris;
+      font-weight: 300;
+    }
+  }
+  & .cajaImg {
+    background-color: $blanco;
+    color: $azul;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 1rem;
+    transition: all 2s;
+    & img {
+      padding: 3%;
+      border-radius: 1rem;
+    }
+    &:hover {
+      width: 100%;
+    }
+    @include desktop {
+      & {
+        width: 50%;
+        &:hover {
+          width: 80%;
+        }
+      }
+    }
+  }
+  & h2 {
+    width: auto;
+    background-color: $azul;
+    color: $blanco;
+  }
+  @include desktop {
+    & .row {
+      margin-bottom: 1rem;
+    }
+  }
+}
+// FORAGING FOR PIGMENTS
+#foragingForPigments {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  height: 100%;
+  background-color: $blanco;
+  color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  h2,
+  p {
+    color: $azul;
+  }
+  .cajaDeCajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 8rem;
+    margin-right: 5rem;
+    @media only screen and (min-width: 350px) {
+      margin-bottom: 10rem;
+    }
+    @media only screen and (min-width: 522px) {
+      margin-bottom: 14rem;
+  }}
+  .cajaImagen {
+    width: 10rem;
+    height: 8rem;
+    margin-right: -5rem;
+    margin-bottom: -3rem;
+    transition: all 1s;
+    opacity: 0.3;
+    z-index: 0;
+    @media only screen and (min-width: 350px) {
+      width: 12.5rem;
+      height: 10rem;
+    }
+    @media only screen and (min-width: 450px) {
+      width: 14rem;
+      height: 10rem;
+    }
+    @media only screen and (min-width: 522px) {
+      width: 18rem;
+      height: 14rem;
+    }
+    &:hover {
+      opacity: 1;
+      z-index: 1;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: $box-shadow;
+    }
+  }
+}
+footer {
+  z-index: 100;
+}
+.indice {
+  z-index: 2;
+}
+// INVERNAL
+#invernal {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  background-color: $blanco;
+  color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  h2,
+  p {
+    color: $azul;
+  }
+  img {
+    object-fit: cover;
+  }
+  p {
+    font-weight: bold;
+  }
+}
+// BLUE LOVE
+#blueLove {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  height: 100%;
+  background-color: $azul;
+  text-decoration-color: $blanco;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & p {
+    color: $blanco;
+    font-size: 1.5rem;
+  }
+  img{
+    border-radius: 2rem;
+  }
+}
+// HORNEAR EN POZO
+#hornearEnPozo {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  background-color: $blanco;
+  color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  h2,
+  p {
+    color: $azul;
+  }
+  img {
+    object-fit: cover;
+    padding-bottom: 2%;
+  }
+  .sombra {
+    box-shadow: 0 0 0 10px black;
+  }
+}
+/* REVELADOS ORGANICOS */
+#reveladosOrganicos {
+  padding-top: $padmob;
+  padding-bottom: $footer * 1.5;
+  width: auto;
+  background-color: $blanco;
+  text-decoration-color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & h2 {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+  }
+  & p {
+    color: $azul;
+    font-weight: bold;
+    & a {
+      color: $azul;
+      font-weight: bold;
+      font-family: "Paz";
+      font-size: 1.5rem;
+      margin: 0;
+      padding: 0;
+      &:hover {
+        color: $gris;
+      }
+    }
+  }
+  & img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  & figure {
+    position: relative;
+    overflow: visible;
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+
+  & figure a {
+    color: $blanco;
+    font-size: 1rem;
+    padding: 1rem;
+    padding-top: 3rem;
+    font-family: "Josefin";
+    text-align: end;
+    background: saddlebrown;
+    transition: opacity 0.4s linear;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    right: 0.8rem;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    border-left: 1.7rem dashed black;
+    border-right: 1.7rem dashed black;
+    &:hover {
+      opacity: 0;
+    }
+  }
+  & .cajaCelu {
+    border: solid 0.2rem $azul;
+    border-radius: 2rem;
+    width: auto;
+    @include desktop {
+      border: solid 0.3rem $azul;
+    }
+    & img {
+      border-radius: 2rem;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  & .centrar {
+    padding-left: 50%;
+  }
+}
+
+// LOS LUGARES DONDE TE AME
+#losLugaresDondeTeAme {
+  padding-top: $padmob;
+  padding-bottom: $footer;
+  width: auto;
+  height: 100%;
+  background-color: $azul;
+  text-decoration-color: $blanco;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & p {
+    color: $blanco;
+    font-size: 1.5rem;
+  }
+  h2 {
+    line-height: normal;
+  }
+  .carousel-inner {
+    text-align: center;
+    vertical-align: middle;
+    height: auto;
+  }
+  .carousel .item > img {
+    display: inline-block;
+    height: 100%;
+  }
+}
+.azul{
+  background-color: $azul;
+}

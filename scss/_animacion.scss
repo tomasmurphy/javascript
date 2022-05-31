@@ -1,0 +1,22 @@
+@import "_variables.scss";
+figure {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+figure a {
+  color: $blanco;
+  text-align: start;
+  background: $azul;
+  transition: opacity 0.4s linear;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0.8rem;
+  bottom: auto;
+  left: 0.8rem;
+  opacity: 0;
+}
+figure:hover a {
+  opacity: 0.75;
+}

@@ -1,0 +1,26 @@
+// VARIABLES
+// MAP 
+$paleta: (
+  "uno": #132f57,
+  "dos": #e5e9ee,
+  "tres": #7e8288,
+);
+// variables 
+$azul: #132f57;
+$blanco: #e5e9ee;
+$gris: #7e8288;
+$padmob: 2.5rem;
+$padesk: 2.5rem;
+$footer: 2.6rem;
+// mixin 
+@mixin desktop {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 767.9px) {
+    @content;
+  }
+}
+$box-shadow: 0 .5rem 1rem rgba($blanco, .5);

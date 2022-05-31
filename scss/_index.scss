@@ -1,0 +1,325 @@
+@import "_variables.scss";
+/* INICIO  */
+#inicio {
+  background-image: url("../img/index/winter_I_love_you.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  & h1 {
+    font-weight: 400;
+    margin-right: 45vw;
+    margin-top: 40vh;
+    font-size: 2rem;
+    color: $blanco;
+    & a {
+      font-weight: 400;
+      font-size: 2rem;
+      color: $blanco;
+    }
+  }
+  & a {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+}
+.inicioFondo {
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+@include desktop {
+  .atrasDeImagen {
+    width: 100%;
+    height: 2.5rem;
+    background: $blanco;
+    position: fixed;
+    z-index: 1;
+    color: $azul;
+    border-bottom: 0.05rem solid $azul;
+  }
+}
+/* PROYECTOS  */
+#proyectos {
+  width: 100%;
+  height: auto;
+  background-color: $blanco;
+  text-decoration-color: $azul;
+  block-size: auto;
+  padding-top: $padmob;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & h2 {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+  }
+  & a {
+    font-size: 1.8rem;
+    color: $azul;
+    @include desktop {
+      & {
+        font-size: 2.5rem;
+      }
+      &:hover{
+        color: $gris;
+      }
+    }
+  }
+  & h3 {
+    margin: auto;
+    padding: auto;
+    width: 4rem;
+    height: 2rem;
+    border-top-left-radius: 1rem;
+    background-color: $azul;
+    opacity: 0.8;
+    font-family: "Josefin";
+    font-size: 1.2rem;
+    padding-top: 0.3rem;
+    &:hover {
+      opacity: 0.7;
+      color: $gris;
+    }
+    @include desktop {
+      width: 6rem;
+      height: 2rem;
+      border-radius: 1rem;
+      padding-top: 0.2rem;
+    }
+  }
+  & h5 {
+    margin: auto;
+    font-size: 1.7rem;
+    color: $blanco;
+    text-shadow: $box-shadow;
+    @include desktop {
+      font-size: 2.2rem;
+      padding-bottom: 1rem;
+    }
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    @include desktop {
+      padding-bottom: 1rem;
+    }
+  }
+  @include mobile {
+    .carousel-control-prev {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      width: auto;
+      height: 55%;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      background: 0 0;
+      border: 0;
+      opacity: 0.5;
+      transition: opacity 0.15s ease;
+    }
+    .carousel-control-next {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      width: auto;
+      height: 55%;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      background: 0 0;
+      border: 0;
+      opacity: 0.5;
+      transition: opacity 0.15s ease;
+    
+    }
+  }
+}
+/* BIO*/  
+#bio {
+  background-color: $azul;
+  padding-top: $padmob;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & a {
+    color: $blanco;
+    font-size: 2.5rem;
+    margin: 3rem;
+    &:hover {
+      color: $gris;
+    }
+  }
+  & p {
+    padding-bottom: 1%;
+  }
+  & img {
+    border: 0.15rem solid $blanco;
+    margin-bottom: 1.5rem;
+  }
+  @include desktop {
+    .imgRedonda.floatLeft {
+      float: left;
+      margin-bottom: 0;
+    }
+  }
+}
+/* STATEMENT  */
+#statement {
+  padding-top: $padmob;
+  width: auto;
+  background-color: $blanco;
+  text-decoration-color: $azul;
+  @include desktop {
+    & {
+      padding-top: $padesk;
+    }
+  }
+  & p {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+    font-weight: bold;
+    font-size: 1.7rem;
+    padding-bottom: 1%;
+  }
+  & h2 {
+    width: auto;
+    background-color: $blanco;
+    color: $azul;
+  }
+  & a {
+    font-size: 2.5rem;
+  }
+  & img {
+    width: 70%;
+    border-radius: 2rem;
+    margin: 5%;
+    transition: all 2s;
+    &:hover {
+      width: 80%;
+    }
+    @include desktop {
+      & {
+        width: 70%;
+        border-radius: 2rem;
+      }
+    }
+  }
+}
+/* CONTACTO  */
+#contacto {
+  background-image: url("../img/index/contacto.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & .transparencia {
+    width: 100%;
+    height: auto;
+    font-size: 1.7rem;
+    background-color: #0b1829;
+    opacity: 0.8;
+    z-index: 8000;
+  }
+  & .caja {
+    height: 100%;
+    font-size: 1.7rem;
+    background-color: #0b1829;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    vertical-align: bottom;
+    @include desktop {
+      & {
+        height: 81vh;
+      }
+    }
+  }
+  & .formulario {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  & ul li {
+    text-align: left;
+    margin: 0 1.2rem 0 0;
+    list-style-type: none;
+    margin: 5%;
+    & a {
+      margin: 0 1.2rem 0 0;
+      color: $blanco;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      font-size: 1.5rem;
+      &:hover {
+        color: $gris;
+      }
+    }
+  }
+  & h2 {
+    padding-top: $padmob;
+    @include desktop {
+      & {
+        padding-top: $padesk;
+      }
+    }
+  }
+  & input {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: $azul;
+    padding-left: 2%;
+  }
+  & textarea {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $azul;
+    padding-left: 2%;
+    padding-top: 2%;
+  }
+  & .boton {
+    border: 0.5rem solid #0b1829;
+    opacity: 1;
+    background-color: #0b1829;
+    color: $blanco;
+    transition: all 1s;
+    &:hover {
+      color: $gris;
+      font-size: 2rem;
+    }
+  }
+}
