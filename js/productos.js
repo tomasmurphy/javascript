@@ -39,8 +39,21 @@ function mostrarProductos(){
     }
     return(lista)
 }
-function imprimirResultado() {
+function imprimirResultado(x) {
     var objetivo = document.getElementById('total');
-    objetivo.innerHTML = mostrarProductos();      
+    objetivo.innerHTML = x;      
 } 
-imprimirResultado()
+
+
+let stock = prompt("Ingresa id del producto")
+
+function hayStock (a){
+    if(mostrarProductos().includes(a)){
+        alert("Hay stock")
+    }
+    else alert("No hay stock del producto id:"+a)
+}
+hayStock(stock)
+
+imprimirResultado(mostrarProductos())
+
