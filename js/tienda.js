@@ -47,3 +47,4 @@ function imprimirResultado() {
     objetivo.innerHTML = ("Llevas gastados $"+acumulado+"<br>"+ "Vas a pagar "+cuotas+" cuotas de $"+interes);      
 } 
 imprimirResultado()
+
