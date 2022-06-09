@@ -27,9 +27,9 @@ do{
     }
 }while(true)
 
-function mostrarProductos(){
+function mostrarProductos(x){
     var lista="";
-    for(var i=0; i<productos.length; i++){
+    for(var i=0; i<x.length; i++){
       lista+= 'id: ' + productos[i].id +
         ' categoria: ' + productos[i].categoria + 
         ' nombre: ' + productos[i].nombre + 
@@ -48,12 +48,15 @@ function imprimirResultado(x) {
 let stock = prompt("Ingresa id del producto")
 
 function hayStock (a){
-    if(mostrarProductos().includes(a)){
-        alert("Hay stock")
+    if(mostrarProductos(productos).includes(a)){
+        alert("Hay stock de "+a)
     }
     else alert("No hay stock del producto id:"+a)
 }
 hayStock(stock)
 
-imprimirResultado(mostrarProductos())
+let x = parseInt(prompt("Cuanto es el maximo que quiere pagar?")
+)
+let productosFiltrados = productos.filter(a => a.precio < x)
 
+imprimirResultado(mostrarProductos(productosFiltrados))
