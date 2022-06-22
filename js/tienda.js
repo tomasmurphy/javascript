@@ -1,50 +1,49 @@
-let pass = 123;
-let password;
-do{
-    password = parseInt(prompt("Ingrese el password. (no digas nada pero es 123)"))
-}while(password !== pass)
+// let pass = 123;
+// let password;
+// do{
+//     password = parseInt(prompt("Ingrese el password. (no digas nada pero es 123)"))
+// }while(password !== pass)
+const
+    cantidad = document.querySelector("#cantidad"),
+    cuotas = document.querySelector("#cuotas");
 
-let esculturas = {Escultura1:10000,Escultura2:20000,Escultura3:30000};
-
-let ingreso = "";
-let acumulado= 0;
-
-for (x in esculturas) {
-    ingreso = parseInt(prompt("La "+x+" vale $"+esculturas[x]+" Cuantas queres?"));
-    gasto = (esculturas[x]*ingreso);
-    acumulado += gasto;
-}
-let cuotas = 0
-do {
-    cuotas = prompt("En cuantas cuotas queres pagar?");
-    if(cuotas>12){
-        alert("La maxima cantidad de cuotas es 12")
-    }    
-} while (cuotas>12)
-
-
+function crearCompra(cantidad, cuotas){
+    let acantidad = cantidad.value
+    let acuotas = parseInt(cuotas.value);
+    let acumulado = 5000 * acantidad;
 let interes = 0
-switch (cuotas) {
-    case cuotas<=3:
-        interes = acumulado/cuotas
+
+switch (acuotas) {
+    case acuotas<=3:
+        interes = acumulado/acuotas
         break;
     case cuotas<=6:
-        interes = acumulado * 1.10/cuotas
+        interes = acumulado * 1.10/acuotas
         break;
     case cuotas<=6:
-        interes = acumulado * 1.15/cuotas
-        break;
-    case cuotas<=9:
-        interes = acumulado * 1.20/cuotas
+        interes = acumulado * 1.15/acuotas
         break;
     default:
-        interes = acumulado * 1.25/cuotas
-        break;
+        interes = acumulado * 1.25/acuotas
+        break;}
+
+    return ("LLevas gastados "+ acumulado +" vas a pagar "+acuotas+" cuotas de " +interes)
+}
+function crearHTML(mensaje) {
+    let html;
+     html = `
+    <p class="col-2 mx-0">${mensaje}</p>
+    
+  `;
+    
+    contenedor.innerHTML = html;
 }
 
-function imprimirResultado() {
-    var objetivo = document.getElementById('total');
-    objetivo.innerHTML = ("Llevas gastados $"+acumulado+"<br>"+ "Vas a pagar "+cuotas+" cuotas de $"+interes);      
-} 
-imprimirResultado()
+btnComprar.addEventListener("click", () => {
+    let mensaje = crearCompra(cantidad, cuotas);
+    crearHTML(mensaje)
+});
+
+
+
 

@@ -1,0 +1,16 @@
+/* CV  */
+#bodyTienda * {
+    font-family: "Josefin";
+    color: $blanco;
+    background-color: $azul;
+    nav *{
+        background-color: $blanco;
+        color: $azul;
+    }
+}
+
+#tienda {
+    padding-bottom: $footer;
+    padding: $padmob;
+    
+}

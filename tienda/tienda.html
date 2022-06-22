@@ -25,14 +25,14 @@
     <meta property='og:url' content='https://pazsecundini.com.ar/proyectos/parquesNacionales.html' />
     <meta property='og:site_name' content='Paz Secundini' />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="../css/reducido.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <link
       rel="icon"
       type="image/x-icon"
       href="../img/index/pazsecundini4x4.png"
     />
   </head>
-  <body>
+  <body id="bodyTienda">
     <!-- NAV MOBILE -->
     <nav class="navMobile fixed-top">
       <ul>
@@ -80,22 +80,18 @@
     </div>
     <nav class="navDesktop fixed-top">
       <ul class="">
-        <li><a href="../index.html#inicio">Inicio</a></li>
-        <li><a href="../index.html#proyectos">Proyectos</a></li>
-        <li><a href="../index.html#bio">Bio</a></li>
-        <li><a href="../index.html#statement">Statement</a></li>
-        <li><a href="../index.html#contacto">Contacto</a></li>
+        <li><a href="./tienda.html">Tienda</a></li>
+        <li><a href="./productos.html">Cargar productos</a></li>
       </ul>
     </nav>
     <!-- SECCION -->
-    <section id="parquesNacionales">
-      <h2 id="total"></h2>
-      <a href="./productos.html"><h2>Cargar productos</h2></a>
-      
+    <section id="tienda">
+ 
+    
 
       <div class="container overflow-hidden">
         <div class="row">
-          <figure class="img-container figure col-md-6">
+          <figure class="img-container figure col-md-3">
             <img
               src="../img/parquesNacionales/un_parque_nacional_en_alaska.JPG"
               class="figure-img img-fluid rounded mx-auto d-block"
@@ -103,167 +99,33 @@
             />
             <a>
               Escultura cerámica en pequeño formato <br />
-              Cerámica, óxidos, crayones, acuarelas, vidrios y esmalte con
-              ceniza <br />
-              5 x 11 x 15 cm <br />
               2020
             </a>
             <figcaption class="figure-caption text-center">
-              Un parque nacional en Alaska
+              Un parque nacional en Alaska <br>
+              $5000
+              <div class="input-field">
+                <label for="cantidad">Cantidad</label>
+                <input id="cantidad" type="number" class="validate" />
+              </div>
+              <div class="input-field">
+                <label for="cuotas">Forma de pago</label>
+                <select id="cuotas" name="cuotas">
+              
+            </div>
+                <option>1 cuota</option>
+                
+                <option>3 cuotas</option>
+                
+                <option>6 cuotas</option>
+                
+                <option>12 cuotas</option>
+                </select>
+                <input type="button" id="btnComprar" class="btn" value="Comprar">
+                </div>
             </figcaption>
           </figure>
-          <figure class="figure col-md-3">
-            <img
-              src="../img/parquesNacionales/fogata_para_la_nostalgia.JPG"
-              class="figure-img img-fluid rounded mx-auto d-block"
-              alt="Escultura en pequeño formato fogata para la nostalgia"
-            />
-            <a>
-              Escultura cerámica en pequeño formato <br />
-              Cerámica, óxidos, crayones y esmaltes con ceniza <br />
-              5 x 16 x 16 cm <br />
-              2021
-            </a>
-            <figcaption class="figure-caption text-center">
-              Fogata para la nostalgia
-            </figcaption>
-          </figure>
-          <figure class="figure col-md-3">
-            <img
-              src="../img/parquesNacionales/celtas.JPG"
-              class="figure-img img-fluid rounded mx-auto d-block"
-              alt="escultura ceramica en pequeño formato celtas"
-            />
-            <a>
-              Escultura cerámica en pequeño formato <br />
-              Cerámica, óxidos, crayones, esmalte con ceniza y mica cordobesa
-              <br />
-              4 x 15 x 15 cm <br />
-              2021
-            </a>
-            <figcaption class="figure-caption text-center">Celtas</figcaption>
-          </figure>
-        </div>
-        <div class="row">
-          <figure class="figure col-md-3">
-            <img
-              src="../img/parquesNacionales/a_una_roca_y_un_oceano_de_distancia.JPG"
-              class="mx-auto d-block figure-img img-fluid rounded"
-              alt="escultura ceramica en pequeño formado a una roca y un oceano de distancia"
-            />
-            <figcaption class="figure-caption text-center">
-              A una roca y un océano de distancia
-            </figcaption>
-            <a>
-              Escultura cerámica en pequeño formato <br />
-              Cerámica ocre y esmalte con ceniza
-              <br />
-              Medidas variables <br />
-              2020
-            </a>
-          </figure>
-          <figure class="figure col-md-3">
-            <img
-              src="../img/parquesNacionales/el_fondo_azul_de_mis_suenios.JPG"
-              class="figure-img img-fluid rounded mx-auto d-block"
-              alt="escultura ceramica en pequeño formato el fondo azul de mis sueños"
-            />
-            <figcaption class="figure-caption text-center">
-              El fondo azul de mis sueños
-            </figcaption>
-            <a>
-              Escultura cerámica en pequeño formato <br />
-              Cerámica, óxido de cobalto, vidrio de color, esmalte con ceniza y
-              esmaltina con ceniza volcánica<br />
-              5 x 7.5 x 8.5 cm <br />
-              2021
-            </a>
-          </figure>
-          <figure class="figure col-md-3">
-            <img
-              src="../img/parquesNacionales/los_paisajes_en_mis_suenios_I.JPG"
-              class="figure-img img-fluid rounded mx-auto d-block"
-              alt="escultura ceramica en pequeño formato los paisajes de mis sueños I"
-            />
-            <figcaption class="figure-caption text-center">
-              Los paisajes en mis sueños I
-            </figcaption>
-            <a>
-              Escultura cerámica en pequeño formato <br />
-              Cerámica, óxidos, crayones, esmaltes con ceniza y esmaltes
-              comerciales <br />
-              5 x 6 x 10 cm <br />
-              2020
-            </a>
-          </figure>
-          <figure class="figure col-md-3">
-            <img
-              src="../img/parquesNacionales/tenia_dos_anios_y_un_caracol.JPG"
-              class="figure-img img-fluid rounded mx-auto d-block"
-              alt="escultura ceramica en pequeño formato tenia dos años y un caracol"
-            />
-            <figcaption class="figure-caption text-center">
-              Tenía dos años y un caracol
-            </figcaption>
-            <a>
-              Escultura cerámica en pequeño formato <br />
-              Cerámica, óxidos, crayones, esmaltes con ceniza, esmalte comercial
-              vidrio y mica cordobesa <br />
-              4.5 x 11 x 11 cm <br />
-              2021
-            </a>
-          </figure>
-        </div>
-        <div class="row">
-          <figure class="figure col-md-4">
-            <img
-              src="../img/parquesNacionales/islandia.JPG"
-              class="figure-img img-fluid rounded mx-auto d-block"
-              alt="escultura ceramica en pequeño formato islandia"
-            />
-            <figcaption class="figure-caption text-center">Islandia</figcaption>
-            <a>
-              Escultura cerámica en pequeño formato <br />
-              Cerámica, óxidos, crayones, esmaltes con ceniza
-              <br />
-              Medidas variables <br />
-              2019
-            </a>
-          </figure>
-          <figure class="figure col-md-4">
-            <img
-              src="../img/parquesNacionales/las_rocas_azules_del_recuerdo.JPG"
-              class="figure-img img-fluid rounded mx-auto d-block"
-              alt="escultura ceramica en pequeño formato las rocas azules del recuerdo"
-            />
-            <figcaption class="figure-caption text-center">
-              Las rocas azules del recuerdo
-            </figcaption>
-            <a>
-              Escultura cerámica en pequeño formato <br />
-              Cerámica, óxido de cobalto, crayones, vidrio de color, esmaltes
-              con cenizas y esmaltina de ceniza volcanica<br />
-              5.5 x 6 x 8 cm <br />
-              2021
-            </a>
-          </figure>
-          <figure class="figure col-md-4">
-            <img
-              src="../img/parquesNacionales/que_somos comparados_con_rocas _y_montanias.JPG"
-              class="figure-img img-fluid rounded mx-auto d-block"
-              alt="escultura ceramica en pequeño formato que somos comparados con rocas y montañas"
-            />
-            <figcaption class="figure-caption text-center">
-              Que somos comparados con rocas y montañas
-            </figcaption>
-            <a>
-              Escultura cerámica en pequeño formato <br />
-              Cerámica con chamote, óxidos, crayones, esmaltes con ceniza
-              <br />
-              10 x 10 x 5 cm <br />
-              2020
-            </a>
-          </figure>
+          <div class="mt-3 col-6" id="contenedor"></div>
         </div>
       </div>
     </section>

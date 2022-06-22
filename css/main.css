@@ -8743,3 +8743,16 @@ figure a {
 
 figure:hover a {
   opacity: 0.75; }
+
+/* CV  */
+#bodyTienda * {
+  font-family: "Josefin";
+  color: #e5e9ee;
+  background-color: #132f57; }
+  #bodyTienda * nav * {
+    background-color: #e5e9ee;
+    color: #132f57; }
+
+#tienda {
+  padding-bottom: 2.6rem;
+  padding: 2.5rem; }
