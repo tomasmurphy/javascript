@@ -31,13 +31,14 @@ function crearProducto(id, categoria, nombre, descripcion, precio, img) {
     return new Producto(id, categoria, nombre, descripcion, precio, img);
 }
 function guardarProducto(producto) {
-    return productos.push(producto);
+    productos.push(producto);
+    localStorage.setItem("productosJson", JSON.stringify(productos))
 }
 
-function crearHTML() {
+function crearHTML(x) {
     let html;
-    for (const producto of productos) {
-        html = `
+    for (const producto of x) { 
+    html = `
     <img class="col-2 mx-0 img-fluid" src=${producto.img} />
     <p class="col-2 mx-0">${producto.nombre}</p>
     <p class="col-2 mx-0">
@@ -50,12 +51,17 @@ function crearHTML() {
       ${producto.descripcion}
     </p>
     <p class="col-2 mx-0">$${producto.precio}</p>
-  `;
-    }
+  `}
     contenedor.innerHTML += html;
-}
+};
+
+
 btnGuardar.addEventListener("click", () => {
     const product = crearProducto(categoria, nombre, descripcion, precio, img);
     guardarProducto(product);
-    crearHTML(productos);
+    location.reload();
 });
+
+let productosJson = localStorage.getItem("productosJson");
+productosJson = JSON.parse(productosJson)
+crearHTML(productosJson);

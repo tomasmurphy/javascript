@@ -3,13 +3,11 @@
 // do{
 //     password = parseInt(prompt("Ingrese el password. (no digas nada pero es 123)"))
 // }while(password !== pass)
-const
-    cantidad = document.querySelector("#cantidad"),
-    cuotas = document.querySelector("#cuotas");
+
 
 function crearCompra(cantidad, cuotas){
-    let acantidad = cantidad.value
-    let acuotas = parseInt(cuotas.value);
+    let acantidad = parseInt(cantidad)
+    let acuotas = parseInt(cuotas);
     let acumulado = 5000 * acantidad;
 let interes = 0
 
@@ -40,7 +38,13 @@ function crearHTML(mensaje) {
 }
 
 btnComprar.addEventListener("click", () => {
-    let mensaje = crearCompra(cantidad, cuotas);
+    let cantidad = document.querySelector("#cantidad"),
+    cuotas = document.querySelector("#cuotas");
+
+    cantidad = localStorage.setItem("cantidad", cantidad.value);
+    cuotas = localStorage.setItem("cuotas", cuotas.value);
+
+    let mensaje = crearCompra(localStorage.getItem("cantidad"), localStorage.getItem("cuotas"));
     crearHTML(mensaje)
 });
 
