@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!-- [if gt IE 8]>      <html class="no-js"> <!--<![endif] -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Paz Secundini - Parques nacionales</title>
+    <meta
+      name="description"
+      content="Serie de eculturas ceramicas en pequeño formato"
+    />
+    <meta
+      name="keywords"
+      content="Esculturas, ceramica, pequeña formato, bellas artes, parques nacionales, sur, alaska, isladia"
+    />
+    <meta name="author" content="Tomás Murphy" />
+    <meta name="copyright" content="Todos los derechos reservados" />
+    <meta property='og:type' content='article' />
+    <meta property='og:title' content='Parques nacionales' />
+    <meta property='og:description' content='Esculturas cerámicas en pequeño formato.' />
+    <meta property='og:image' content='https://pazsecundini.com.ar/img/parquesNacionales/un_parque_nacional_en_alaska.JPG' />
+    <meta property='og:url' content='https://pazsecundini.com.ar/proyectos/parquesNacionales.html' />
+    <meta property='og:site_name' content='Paz Secundini' />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../img/index/pazsecundini4x4.png"
+    />
+  </head>
+<body id="bodyTienda">
+<!-- NAV  -->
+<nav id="otraNav" class="fixed-top fondo navbar-dark navbar">
+  <div class="burgerTop container-fluid">
+    </div>
+    <button
+      id="button"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+    <i class="bi bi-cart-check"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav sombra">
+        <h2 class="">Carrito</h2>
+                <!-- Elementos del carrito -->
+                <ul id="carrito" class="list-group"></ul>
+                <hr>
+                <!-- Precio total -->
+                <p class="text-right">Total: $ <span id="total"></span>;</p>
+                <button id="boton-vaciar" class="btn">Vaciar</button>
+                <button id="boton-comprar" class="btn">Comprar</button>
+      </div>
+    </div>
+  </div>
+</nav>
+    <!-- SECCION -->
+    <section id="tienda">
+      <input type="button" id="btnEsculturas" class="btn" value="Comprar">
+      <input type="button" id="btnPinturas" class="btn" value="Comprar">
+      <input type="button" id="btnFotos" class="btn" value="Comprar">
+      <!-- <button id="btnEsculturas" class="btn">Esculturas</button>
+      <button id="btnPinturas" class="btn">Pinturas</button>
+      <button id="btnFotos" class="btn">Fotos</button> -->
+
+      <div class="container mt-5">
+        <div class="row">
+            <!-- Elementos generados a partir del JSON -->
+            <main id="items" class="col-12 row"></main>
+        </div>
+    </div>
+    </section>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/tienda2.js"></script>
+  
+</body>
+</html>

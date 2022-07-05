@@ -8748,10 +8748,106 @@ figure:hover a {
 #bodyTienda * {
   font-family: "Josefin";
   color: #e5e9ee;
-  background-color: #132f57; }
-  #bodyTienda * nav * {
-    background-color: #e5e9ee;
-    color: #132f57; }
+  background-color: #132f57;
+  /* NAVEGACION */ }
+
+#otraNav .navbar-expand-md .navbar-collapse {
+  justify-content: flex-end; }
+  #otraNav .navbar-expand-md .navbar-collapse .active {
+    background-color: #7e8288;
+    opacity: .9;
+    border-radius: 2rem; }
+
+#otraNav .fondo {
+  background: linear-gradient(to right, #070300, #2b2118); }
+
+#otraNav .navbar-bar {
+  align-items: flex-end; }
+
+#otraNav .navbar-dark .navbar-brand {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+  color: #e5e9ee;
+  text-shadow: 0px 1px #132f57; }
+
+#otraNav .navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 1rem;
+  text-decoration: none;
+  white-space: nowrap; }
+
+#otraNav .navbar-dark .navbar-toggler {
+  color: transparent;
+  border-color: transparent; }
+
+#otraNav .navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+  #otraNav .navbar-collapse a {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: #e5e9ee;
+    margin: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem; }
+    #otraNav .navbar-collapse a:hover {
+      opacity: .7; }
+  @media screen and (min-width: 768px) {
+    #otraNav .navbar-collapse a {
+      font-size: .8rem;
+      margin-right: 2rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-left: 0; } }
+
+#otraNav nav {
+  opacity: 1;
+  position: fixed;
+  display: flex; }
+  #otraNav nav .sombra {
+    text-shadow: 0px 1px #132f57; }
+  #otraNav nav a {
+    font-size: .7rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-decoration: unset;
+    color: #e5e9ee;
+    margin-right: 2rem; }
+    #otraNav nav a:hover {
+      opacity: .7; }
+
+#otraNav .algo {
+  align-items: flex-end !important;
+  margin-right: 2rem;
+  justify-content: flex-end; }
+
+#otraNav .navbar > .container, #otraNav .navbar > .container-fluid, #otraNav .navbar > .container-sm, #otraNav .navbar > .container-md, #otraNav .navbar > .container-lg, #otraNav .navbar > .container-xl, #otraNav .navbar > .container-xxl, #otraNav .navbar > .container-sm, #otraNav .navbar > .container-md, #otraNav .navbar > .container-lg, #otraNav .navbar > .container-xl, #otraNav .navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0; }
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem; }
 
 #tienda {
   padding-bottom: 2.6rem;

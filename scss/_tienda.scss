@@ -3,12 +3,122 @@
     font-family: "Josefin";
     color: $blanco;
     background-color: $azul;
-    nav *{
-        background-color: $blanco;
-        color: $azul;
+    @import "_variables.scss";
+/* NAVEGACION */
+}
+#otraNav{
+.navbar-expand-md .navbar-collapse {
+  justify-content: flex-end;
+  .active{
+    background-color:  $gris;
+    opacity: .9;
+    border-radius: 2rem;
+  }
+  
+}
+.fondo{
+  background: linear-gradient(to right, rgb(7, 3, 0), rgba(43,33,24,1));
+}
+.navbar-bar {align-items: flex-end;
+  
+}
+.navbar-dark .navbar-brand {
+  font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: $blanco;
+    text-shadow: 0px 1px $azul;
+    
+}
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 1rem;
+  text-decoration: none;
+  white-space: nowrap;
+  
+ }
+.navbar-dark .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+.navbar-collapse {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  a {
+    font-size: 1.2rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 30px;
+    color: $blanco;
+    margin: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &:hover {
+      opacity: .7;
     }
+    
+    }
+    @include desktop{
+      a {
+        font-size: .8rem;
+        margin-right: 2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+    }}
+}
+nav {
+  opacity: 1;
+  position: fixed;
+  display: flex;
+  .sombra {
+    text-shadow: 0px 1px $azul;
+  }
+  a {
+  font-size: .7rem;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: unset;
+  color: $blanco;
+  margin-right: 2rem;
+  
+  &:hover {
+    opacity: .7;
+  }
+  }
+}
+.algo{
+    align-items: flex-end !important;
+    margin-right: 2rem;
+    justify-content: flex-end;
+}
+.navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0;
 }
 
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+}
 #tienda {
     padding-bottom: $footer;
     padding: $padmob;
