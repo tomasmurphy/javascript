@@ -29,6 +29,7 @@ do{
 
 function mostrarProductos(x){
     var lista="";
+    // I++
     for(var i=0; i<x.length; i++){
       lista+= 'id: ' + productos[i].id +
         ' categoria: ' + productos[i].categoria + 
@@ -48,10 +49,8 @@ function imprimirResultado(x) {
 let stock = prompt("Ingresa id del producto")
 
 function hayStock (a){
-    if(mostrarProductos(productos).includes(a)){
-        alert("Hay stock de "+a)
-    }
-    else alert("No hay stock del producto id:"+a)
+    // IF SIMPLIFICADO 
+    (mostrarProductos(productos).includes(a)) ? alert("Hay stock de "+a):alert("No hay stock del producto id:"+a)
 }
 hayStock(stock)
 

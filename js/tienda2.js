@@ -1,71 +1,108 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+    const btnTodos = document.querySelector("#btnTodos");    
     const btnEsculturas = document.querySelector("#btnEsculturas");
     const btnPinturas = document.querySelector("#btnPinturas");
     const btnFotos = document.querySelector("#btnFotos");
-    
-    
-    const productos = [
-    {
-        id: 1,
-        categoria: "Esculturas",
-        nombre: 'Escultura',
-        descripcion: "Una escultura",
-        precio: 1,
-        imagen: 'escultura.jpg'
-    },
-    {
-        id: 1,
-        categoria: "Esculturas",
-        nombre: 'Escultura',
-        descripcion: "Una escultura",
-        precio: 1,
-        imagen: 'escultura.jpg'
-    },
 
-    {
-        id: 1,
-        categoria: "Pinturas",
-        nombre: 'Pintura',
-        descripcion: "Una pintura",
-        precio: 1,
-        imagen: 'pintura.jpg'
-    },
-    {
-        id: 1,
-        categoria: "Fotos",
-        nombre: 'Foto',
-        descripcion: "Una foto",
-        precio: 1,
-        imagen: 'foto.jpg'
-    },
+
+    const productos = [
+        {
+            id: 1,
+            categoria: "Esculturas",
+            nombre: 'Escultura',
+            descripcion: "Una escultura",
+            precio: 1,
+            imagen: '../img/parquesNacionales/celtas.jpg'
+        },
+        {
+            id: 2,
+            categoria: "Esculturas",
+            nombre: 'Escultura',
+            descripcion: "Una escultura",
+            precio: 1,
+            imagen: '../img/parquesNacionales/celtas.jpg'
+        },
+
+        {
+            id: 1,
+            categoria: "Pinturas",
+            nombre: 'Pintura',
+            descripcion: "Una pintura",
+            precio: 1,
+            imagen: '../img/parquesNacionales/islandia.jpg'
+        },
+        {
+            id: 1,
+            categoria: "Fotos",
+            nombre: 'Foto',
+            descripcion: "Una foto",
+            precio: 1,
+            imagen: '../img/parquesNacionales/las_rocas_azules_del_recuerdo.jpg'
+        },
     ];
-    
-   
-    
-    let productosFiltrados = productos
-    
+
+
+
+
+    btnTodos.addEventListener("click", () => {
+        renderizarProductos("Todos")
+    });
+
     btnEsculturas.addEventListener("click", () => {
-        filtrar("Esculturas")
+        renderizarProductos("Esculturas")
     });
     btnPinturas.addEventListener("click", () => {
-        filtrar("Pinturas")
+        renderizarProductos("Pinturas")
     });
     btnFotos.addEventListener("click", () => {
-        filtrar("Fotos")
+        renderizarProductos("Fotos")
     });
-            
 
-let carrito = [];
-    const DOMitems = document.querySelector('#items');
+
+    let carrito = [];
+
+    const crearItems = document.querySelector('#crearItems');
     const DOMcarrito = document.querySelector('#carrito');
     const DOMtotal = document.querySelector('#total');
     const DOMbotonVaciar = document.querySelector('#boton-vaciar');
     const miLocalStorage = window.localStorage;
+    const crearMain = document.createElement('main');
+    crearMain.setAttribute("id", "items")
+    crearMain.classList.add("items", "col-12", "row");
+    crearItems.appendChild(crearMain);
+
+    function renderizarProductos(filtro) {
+        var borrar = document.getElementById("items");
+        padre = borrar.parentNode;
+        padre.removeChild(borrar);
+        const crearMain = document.createElement('main');
+        crearMain.setAttribute("id", "items")
+        crearMain.classList.add("items", "col-12", "row");
+        crearItems.appendChild(crearMain);
+
+        switch (filtro) {
+            case "Esculturas":
+
+                var productosFiltrados = productos.filter(a => a.categoria === filtro);
+                break;
+            case "Pinturas":
+                var productosFiltrados = productos.filter(a => a.categoria === filtro);
+
+                break;
+            case "Fotos":
+                var productosFiltrados = productos.filter(a => a.categoria === filtro);
+                break;
+                case "Todos":
+                    var productosFiltrados = productos;
+                    break;
+            default:
+                var productosFiltrados = productos
+                break;
+        }
 
 
-    function renderizarProductos() {
         productosFiltrados.forEach((info) => {
             const divProductos = document.createElement('div');
             divProductos.classList.add('card', 'col-12', 'col-sm-6', 'col-md-3');
@@ -88,14 +125,15 @@ let carrito = [];
             divProductosBoton.textContent = 'Agregar al carrito';
             divProductosBoton.setAttribute('marcador', info.id);
             divProductosBoton.addEventListener('click', agregarAlCarrito);
-            
+
             divProductosCardBody.appendChild(divProductosImagen);
             divProductosCardBody.appendChild(divProductosTitle);
             divProductosCardBody.appendChild(divProductosDescripcion);
             divProductosCardBody.appendChild(divProductosPrecio);
             divProductosCardBody.appendChild(divProductosBoton);
             divProductos.appendChild(divProductosCardBody);
-            DOMitems.appendChild(divProductos);
+            crearMain.appendChild(divProductos);
+
         });
     }
 
@@ -167,12 +205,8 @@ let carrito = [];
     DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
     cargarCarritoDeLocalStorage();
-    // renderizarProductos();
+    renderizarProductos("todos");
     actualizarCarrito();
-    function filtrar(x){
-        productosFiltrados = productos.filter(a => a.categoria === x);
-        renderizarProductos()
-        }
-  
+
+
 });
- 
