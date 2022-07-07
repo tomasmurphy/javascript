@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "categoria": "Esculturas",
+      "nombre": "Escultura",
+      "descripcion": "Una escultura",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 2,
+      "categoria": "Esculturas",
+      "nombre": "Escultura",
+      "descripcion": "Una escultura",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 3,
+      "categoria": "Esculturas",
+      "nombre": "Escultura",
+      "descripcion": "Una escultura",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 4,
+      "categoria": "Esculturas",
+      "nombre": "Escultura",
+      "descripcion": "Una escultura",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 5,
+      "categoria": "Fotos",
+      "nombre": "Fotos",
+      "descripcion": "Una foto",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 6,
+      "categoria": "Fotos",
+      "nombre": "Fotos",
+      "descripcion": "Una foto",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 7,
+      "categoria": "Fotos",
+      "nombre": "Fotos",
+      "descripcion": "Una foto",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 8,
+      "categoria": "Fotos",
+      "nombre": "Fotos",
+      "descripcion": "Una foto",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 9,
+      "categoria": "Pinturas",
+      "nombre": "Pintura",
+      "descripcion": "Una pintura",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 10,
+      "categoria": "Pinturas",
+      "nombre": "Pintura",
+      "descripcion": "Una pintura",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 11,
+      "categoria": "Pinturas",
+      "nombre": "Pintura",
+      "descripcion": "Una pintura",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    },
+    {
+      "id": 12,
+      "categoria": "Pinturas",
+      "nombre": "Pintura",
+      "descripcion": "Una pintura",
+      "precio": 1,
+      "imagen": "../img/parquesNacionales/celtas.jpg"
+    }
+  ]

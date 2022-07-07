@@ -20,6 +20,15 @@
 input{
   margin-left: 1rem;
   margin-right: 1rem;
+  opacity: 1;
+  background-color: $azul;
+  color: $blanco;
+  border-radius: 1rem;
+  outline: none;
+  
+}
+.activo{
+  opacity: 1;
 }
 .btn{
   background-color: $azul;
@@ -37,7 +46,7 @@ p{
 }
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
-  background-color: $azul;
+  background-color: $blanco;
   color: $blanco;
   .active{
     background-color:  $gris;
@@ -58,7 +67,6 @@ p{
     font-weight: 400;
     line-height: 30px;
     color: $azul;
-    text-shadow: 0px 1px $azul;
     
 }
 .navbar-brand {
@@ -77,9 +85,9 @@ p{
   flex-basis: 100%;
   flex-grow: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  background-color: $azul;
+  background-color: $blanco;
   a {
     font-size: 1.2rem;
     font-style: normal;
