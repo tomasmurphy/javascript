@@ -1,5 +1,12 @@
 @import "_variables.scss";
 /* INICIO  */
+
+  i{
+    position: relative;
+    z-index: 111111111111111;
+    color: $azul;
+  }
+
 #inicio {
   background-image: url("../img/index/winter_I_love_you.jpg");
   background-position: center;

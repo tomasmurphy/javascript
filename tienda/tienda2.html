@@ -33,53 +33,55 @@
     />
   </head>
 <body id="bodyTienda">
-<!-- NAV  -->
-<nav id="otraNav" class="fixed-top fondo navbar-dark navbar">
-  <div class="burgerTop container-fluid">
-    </div>
-    <button
-      id="button"
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-    <i class="bi bi-cart-check"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav sombra">
-        <h2 class="">Carrito</h2>
-                <!-- Elementos del carrito -->
-                <ul id="carrito" class="list-group"></ul>
-                <hr>
-                <!-- Precio total -->
-                <p class="text-right">Total: $ <span id="total"></span>;</p>
-                <button id="boton-vaciar" class="btn">Vaciar</button>
-                <button id="boton-comprar" class="btn">Comprar</button>
+  <nav id="menu" class="fixed-top cajaNav navbar-dark navbar navbar-expand-md">
+    <div class="burgerTop container-fluid mt-3 mt-md-0">
+      <div class="bloqueLogo">
+        <div class="dropdown">
+          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi btn bi-cart-check fondo"> Carrito</i>
+          </a>
+          <ul class="dropdown-menu fondoCarrito"  aria-labelledby="navbarDropdown">
+            <div id="carrito" ></div>
+            <li><p class="text-right">Total: $ <span id="total"></span>;</p></li>
+            <li><button id="btnVaciar" class="btn">Vaciar</button></li>
+            <li><button id="btnComprar" class="btn">Comprar</button></li>      
+              </ul>
+            </div>
+      </div>
+      <button
+        id="button"
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav sombra">
+            <input type="button" id="btnEsculturas" class="btn" value="Esculturas">
+            <input type="button" id="btnPinturas" class="btn" value="Pinturas">
+            <input type="button" id="btnFotos" class="btn" value="Fotos">
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
     <!-- SECCION -->
-    <section id="tienda">
-      <input type="button" id="btnTodos" class="btn" value="Todos los productos">
-      <input type="button" id="btnEsculturas" class="btn" value="Esculturas">
-      <input type="button" id="btnPinturas" class="btn" value="Pinturas">
-      <input type="button" id="btnFotos" class="btn" value="Fotos">
-      
-
-      <div class="container mt-5">
+    <section id="tienda"> 
+      <div class="container-fluid mt-3">
         <div class="row">
           <div id="crearItems">
         </div>
       </div>
     </div>
     </section>
+    <!-- SCRIPS  -->
     <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sweetalert2.all.min.js"></script>
     <script src="../js/tienda2.js"></script>
-  
 </body>
 </html>

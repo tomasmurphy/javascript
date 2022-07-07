@@ -7995,6 +7995,11 @@ footer {
   border-top: 0.08rem solid #7e8288; }
 
 /* INICIO  */
+i {
+  position: relative;
+  z-index: 111111111111111;
+  color: #132f57; }
+
 #inicio {
   background-image: url("../img/index/winter_I_love_you.jpg");
   background-position: center;
@@ -8747,107 +8752,122 @@ figure:hover a {
 /* CV  */
 #bodyTienda * {
   font-family: "Josefin";
-  color: #e5e9ee;
-  background-color: #132f57;
+  color: #132f57;
+  background-color: #e5e9ee;
   /* NAVEGACION */ }
-
-#otraNav .navbar-expand-md .navbar-collapse {
-  justify-content: flex-end; }
-  #otraNav .navbar-expand-md .navbar-collapse .active {
-    background-color: #7e8288;
-    opacity: .9;
-    border-radius: 2rem; }
-
-#otraNav .fondo {
-  background: linear-gradient(to right, #070300, #2b2118); }
-
-#otraNav .navbar-bar {
-  align-items: flex-end; }
-
-#otraNav .navbar-dark .navbar-brand {
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 30px;
-  color: #e5e9ee;
-  text-shadow: 0px 1px #132f57; }
-
-#otraNav .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  font-size: 1rem;
-  text-decoration: none;
-  white-space: nowrap; }
-
-#otraNav .navbar-dark .navbar-toggler {
-  color: transparent;
-  border-color: transparent; }
-
-#otraNav .navbar-collapse {
-  flex-basis: 100%;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; }
-  #otraNav .navbar-collapse a {
-    font-size: 1.2rem;
+  #bodyTienda * .card {
+    background-color: #e5e9ee; }
+  #bodyTienda * .bloqueLogo {
+    width: 80%;
+    padding-left: 3rem; }
+  #bodyTienda * .fondoCarrito {
+    background: green;
+    height: 100vh; }
+  #bodyTienda * input {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  #bodyTienda * .btn {
+    background-color: #132f57;
+    color: #e5e9ee;
+    border-radius: 1rem;
+    outline: none; }
+    #bodyTienda * .btn:hover {
+      opacity: .7;
+      outline: none;
+      box-shadow: none; }
+  #bodyTienda * p {
+    font-size: 1rem; }
+  #bodyTienda * .navbar-expand-md .navbar-collapse {
+    justify-content: flex-end;
+    background-color: #132f57;
+    color: #e5e9ee; }
+    #bodyTienda * .navbar-expand-md .navbar-collapse .active {
+      background-color: #7e8288;
+      opacity: .9;
+      border-radius: 2rem; }
+  #bodyTienda * .fondo {
+    background: #132f57; }
+  #bodyTienda * .navbar-bar {
+    align-items: flex-end; }
+  #bodyTienda * .navbar-dark .navbar-brand {
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
     line-height: 30px;
-    color: #e5e9ee;
-    margin: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem; }
-    #otraNav .navbar-collapse a:hover {
-      opacity: .7; }
-  @media screen and (min-width: 768px) {
-    #otraNav .navbar-collapse a {
-      font-size: .8rem;
-      margin-right: 2rem;
-      margin-top: 0;
-      margin-bottom: 0;
-      margin-left: 0; } }
-
-#otraNav nav {
-  opacity: 1;
-  position: fixed;
-  display: flex; }
-  #otraNav nav .sombra {
+    color: #132f57;
     text-shadow: 0px 1px #132f57; }
-  #otraNav nav a {
-    font-size: .7rem;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 30px;
-    text-decoration: unset;
-    color: #e5e9ee;
-    margin-right: 2rem; }
-    #otraNav nav a:hover {
-      opacity: .7; }
-
-#otraNav .algo {
-  align-items: flex-end !important;
-  margin-right: 2rem;
-  justify-content: flex-end; }
-
-#otraNav .navbar > .container, #otraNav .navbar > .container-fluid, #otraNav .navbar > .container-sm, #otraNav .navbar > .container-md, #otraNav .navbar > .container-lg, #otraNav .navbar > .container-xl, #otraNav .navbar > .container-xxl, #otraNav .navbar > .container-sm, #otraNav .navbar > .container-md, #otraNav .navbar > .container-lg, #otraNav .navbar > .container-xl, #otraNav .navbar > .container-xxl {
-  display: flex;
-  flex-wrap: inherit;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 0; }
-
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-end;
-  padding-top: 0.5rem;
-  padding-bottom: 1rem;
-  padding-right: 2rem; }
+  #bodyTienda * .navbar-brand {
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    font-size: 1rem;
+    text-decoration: none;
+    white-space: nowrap; }
+  #bodyTienda * .navbar-dark .navbar-toggler {
+    color: transparent;
+    border-color: transparent; }
+  #bodyTienda * .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #132f57; }
+    #bodyTienda * .navbar-collapse a {
+      font-size: 1.2rem;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 30px;
+      color: #132f57;
+      margin: 2rem;
+      padding-left: 1rem;
+      padding-right: 1rem; }
+      #bodyTienda * .navbar-collapse a:hover {
+        opacity: .7; }
+    @media screen and (min-width: 768px) {
+      #bodyTienda * .navbar-collapse a {
+        font-size: .8rem;
+        margin-right: 2rem;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 0; } }
+  #bodyTienda * nav {
+    opacity: 1;
+    position: fixed;
+    display: flex; }
+    #bodyTienda * nav .sombra {
+      text-shadow: 0px 1px #132f57; }
+    #bodyTienda * nav a {
+      font-size: .7rem;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: 400;
+      line-height: 30px;
+      text-decoration: unset;
+      color: #e5e9ee;
+      margin-right: 2rem; }
+      #bodyTienda * nav a:hover {
+        opacity: .7; }
+  #bodyTienda * .algo {
+    align-items: flex-end !important;
+    margin-right: 2rem;
+    justify-content: flex-end; }
+  #bodyTienda * .navbar > .container, #bodyTienda * .navbar > .container-fluid, #bodyTienda * .navbar > .container-sm, #bodyTienda * .navbar > .container-md, #bodyTienda * .navbar > .container-lg, #bodyTienda * .navbar > .container-xl, #bodyTienda * .navbar > .container-xxl, #bodyTienda * .navbar > .container-sm, #bodyTienda * .navbar > .container-md, #bodyTienda * .navbar > .container-lg, #bodyTienda * .navbar > .container-xl, #bodyTienda * .navbar > .container-xxl {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0; }
+  #bodyTienda * .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    background: #132f57; }
 
 #tienda {
   padding-bottom: 2.6rem;

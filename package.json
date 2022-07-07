@@ -29,6 +29,8 @@
     "bootstrap-icons": "^1.8.1",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.15",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.4.20",
     "wow.js": "^1.2.2"
   }
 }

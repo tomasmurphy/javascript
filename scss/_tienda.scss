@@ -1,14 +1,44 @@
 /* CV  */
 #bodyTienda * {
     font-family: "Josefin";
-    color: $blanco;
-    background-color: $azul;
+    color: $azul;
+    background-color: $blanco;
     @import "_variables.scss";
 /* NAVEGACION */
+.card{
+  background-color: $blanco;
 }
-#otraNav{
+
+.bloqueLogo{
+  width: 80%;
+  padding-left: 3rem; 
+}
+.fondoCarrito{
+  background: green;
+  height: 100vh;
+}
+input{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.btn{
+  background-color: $azul;
+  color: $blanco;
+  border-radius: 1rem;
+  outline: none;
+  &:hover{
+    opacity: .7;
+    outline: none;
+    box-shadow: none;
+  }
+}
+p{
+  font-size: 1rem;
+}
 .navbar-expand-md .navbar-collapse {
   justify-content: flex-end;
+  background-color: $azul;
+  color: $blanco;
   .active{
     background-color:  $gris;
     opacity: .9;
@@ -17,7 +47,7 @@
   
 }
 .fondo{
-  background: linear-gradient(to right, rgb(7, 3, 0), rgba(43,33,24,1));
+  background: $azul;
 }
 .navbar-bar {align-items: flex-end;
   
@@ -27,7 +57,7 @@
     font-variant: normal;
     font-weight: 400;
     line-height: 30px;
-    color: $blanco;
+    color: $azul;
     text-shadow: 0px 1px $azul;
     
 }
@@ -49,13 +79,14 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: $azul;
   a {
     font-size: 1.2rem;
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
     line-height: 30px;
-    color: $blanco;
+    color: $azul;
     margin: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -107,18 +138,21 @@ nav {
   justify-content: flex-end;
   padding: 0;
 }
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  background: $azul;
+}
 
 }
-.navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
-    padding-right: 2rem;
-}
+
+
 #tienda {
     padding-bottom: $footer;
     padding: $padmob;

@@ -1,12 +1,6 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
-    const btnTodos = document.querySelector("#btnTodos");    
-    const btnEsculturas = document.querySelector("#btnEsculturas");
-    const btnPinturas = document.querySelector("#btnPinturas");
-    const btnFotos = document.querySelector("#btnFotos");
-
-
+    
+    // PRODUCTOS 
     const productos = [
         {
             id: 1,
@@ -26,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
         {
-            id: 1,
+            id: 3,
             categoria: "Pinturas",
             nombre: 'Pintura',
             descripcion: "Una pintura",
@@ -34,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             imagen: '../img/parquesNacionales/islandia.jpg'
         },
         {
-            id: 1,
+            id: 4,
             categoria: "Fotos",
             nombre: 'Foto',
             descripcion: "Una foto",
@@ -43,37 +37,63 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     ];
 
+    // VARIABLES 
+    const btnVaciar = document.querySelector('#btnVaciar');
+    const btnComprar = document.querySelector('#btnComprar');
+    const btnTodos = document.querySelector("#btnTodos");    
+    const btnEsculturas = document.querySelector("#btnEsculturas");
+    const btnPinturas = document.querySelector("#btnPinturas");
+    const btnFotos = document.querySelector("#btnFotos");
+    let carrito = [];
+    const crearItems = document.querySelector('#crearItems');
+    const divCarrito = document.querySelector('#carrito');
+    const total = document.querySelector('#total');
+    const miLocalStorage = window.localStorage;
 
-
-
-    btnTodos.addEventListener("click", () => {
-        renderizarProductos("Todos")
-    });
-
+    // EVENTOS BOTONES 
+    // btnTodos.addEventListener("click", () => {
+    //     cargarProductos("Todos")
+    // });
     btnEsculturas.addEventListener("click", () => {
-        renderizarProductos("Esculturas")
+        cargarProductos("Esculturas")
     });
     btnPinturas.addEventListener("click", () => {
-        renderizarProductos("Pinturas")
+        cargarProductos("Pinturas")
     });
     btnFotos.addEventListener("click", () => {
-        renderizarProductos("Fotos")
+        cargarProductos("Fotos")
+    });
+    btnComprar.addEventListener("click", () => {
+        Swal.fire({
+            title: "Finalizar compra",
+            text: "Comprueba que tus productos son correctos",
+            showCancelButton: true,
+            confirmButtonText: "Comprar",
+            cancelButtonText: "Cancelar",
+        });
+    });
+    btnVaciar.addEventListener("click", () => {
+        Swal.fire({
+            title: "Vaciar el carrito",
+            text: "¿Estás seguro que quieres vaciar el carrito?",
+            showCancelButton: true,
+            confirmButtonText: "Vaciar",
+            cancelButtonText: "Cancelar",
+        }).then((result) => {
+            if (result.isConfirmed){
+                vaciarCarrito();
+            }
+        })
     });
 
-
-    let carrito = [];
-
-    const crearItems = document.querySelector('#crearItems');
-    const DOMcarrito = document.querySelector('#carrito');
-    const DOMtotal = document.querySelector('#total');
-    const DOMbotonVaciar = document.querySelector('#boton-vaciar');
-    const miLocalStorage = window.localStorage;
+    // CREAR MAIN DONDE CARGAR PRODUCTOS 
     const crearMain = document.createElement('main');
     crearMain.setAttribute("id", "items")
     crearMain.classList.add("items", "col-12", "row");
     crearItems.appendChild(crearMain);
 
-    function renderizarProductos(filtro) {
+    // FUNCIONES 
+    function cargarProductos(filtro) {
         var borrar = document.getElementById("items");
         padre = borrar.parentNode;
         padre.removeChild(borrar);
@@ -84,24 +104,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
         switch (filtro) {
             case "Esculturas":
-
                 var productosFiltrados = productos.filter(a => a.categoria === filtro);
                 break;
             case "Pinturas":
                 var productosFiltrados = productos.filter(a => a.categoria === filtro);
-
                 break;
             case "Fotos":
                 var productosFiltrados = productos.filter(a => a.categoria === filtro);
                 break;
-                case "Todos":
+            case "Todos":
                     var productosFiltrados = productos;
                     break;
             default:
                 var productosFiltrados = productos
                 break;
         }
-
 
         productosFiltrados.forEach((info) => {
             const divProductos = document.createElement('div');
@@ -126,8 +143,9 @@ document.addEventListener('DOMContentLoaded', () => {
             divProductosBoton.setAttribute('marcador', info.id);
             divProductosBoton.addEventListener('click', agregarAlCarrito);
 
-            divProductosCardBody.appendChild(divProductosImagen);
+            
             divProductosCardBody.appendChild(divProductosTitle);
+            divProductosCardBody.appendChild(divProductosImagen);
             divProductosCardBody.appendChild(divProductosDescripcion);
             divProductosCardBody.appendChild(divProductosPrecio);
             divProductosCardBody.appendChild(divProductosBoton);
@@ -144,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function actualizarCarrito() {
-        DOMcarrito.textContent = '';
+        divCarrito.textContent = '';
         const carritoSinDuplicados = [...new Set(carrito)];
         carritoSinDuplicados.forEach((item) => {
             const miItem = productos.filter((itemProductos) => {
@@ -163,9 +181,9 @@ document.addEventListener('DOMContentLoaded', () => {
             miBoton.dataset.item = item;
             miBoton.addEventListener('click', borrarItemCarrito);
             divProductos.appendChild(miBoton);
-            DOMcarrito.appendChild(divProductos);
+            divCarrito.appendChild(divProductos);
         });
-        DOMtotal.textContent = calcularTotal();
+        total.textContent = calcularTotal();
     }
 
     function borrarItemCarrito(evento) {
@@ -186,12 +204,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 0).toFixed(0);
     }
 
-    function vaciarCarrito() {
-        carrito = [];
-        actualizarCarrito();
-        localStorage.clear();
-    }
-
     function guardarCarritoEnLocalStorage() {
         miLocalStorage.setItem('carrito', JSON.stringify(carrito));
     }
@@ -202,11 +214,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    DOMbotonVaciar.addEventListener('click', vaciarCarrito);
+    function vaciarCarrito() {
+        carrito = [];
+        actualizarCarrito();
+        localStorage.clear();
+    }
 
+    // INICIALIZAR FUNCIONES 
     cargarCarritoDeLocalStorage();
-    renderizarProductos("todos");
+    cargarProductos("todos");
     actualizarCarrito();
-
-
 });
