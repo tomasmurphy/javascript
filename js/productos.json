@@ -2,97 +2,97 @@
     {
       "id": 1,
       "categoria": "Esculturas",
-      "nombre": "Escultura",
-      "descripcion": "Una escultura",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Celtas",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 15000,
+      "imagen": "../img/tienda/celtas.jpg"
     },
     {
       "id": 2,
       "categoria": "Esculturas",
-      "nombre": "Escultura",
-      "descripcion": "Una escultura",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Una roca y un océano",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 28000,
+      "imagen": "../img/tienda/a_una_roca_y_un_oceano_de_distancia.jpg"
     },
     {
       "id": 3,
       "categoria": "Esculturas",
-      "nombre": "Escultura",
-      "descripcion": "Una escultura",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "El fondo azul de mis sueños",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 10000,
+      "imagen": "../img/tienda/el_fondo_azul_de_mis_suenios.jpg"
     },
     {
       "id": 4,
       "categoria": "Esculturas",
-      "nombre": "Escultura",
-      "descripcion": "Una escultura",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Fogata para la nostalgia",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 8000,
+      "imagen": "../img/tienda/fogata_para_la_nostalgia.jpg"
     },
     {
       "id": 5,
       "categoria": "Fotos",
-      "nombre": "Fotos",
-      "descripcion": "Una foto",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Revelada con menta",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 100,
+      "imagen": "../img/tienda/revelada_con_menta_I.jpg"
     },
     {
       "id": 6,
       "categoria": "Fotos",
-      "nombre": "Fotos",
-      "descripcion": "Una foto",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Revelada con whiskey",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 100,
+      "imagen": "../img/tienda/revelada_con_menta_II.jpg"
     },
     {
       "id": 7,
       "categoria": "Fotos",
-      "nombre": "Fotos",
-      "descripcion": "Una foto",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Revelada con orégano",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 100,
+      "imagen": "../img/tienda/revelada_con_oregano.jpg"
     },
     {
       "id": 8,
       "categoria": "Fotos",
-      "nombre": "Fotos",
-      "descripcion": "Una foto",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Revelada con té",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+      "precio": 100,
+      "imagen": "../img/tienda/revelada_con_te_negro_I.jpg"
     },
     {
       "id": 9,
       "categoria": "Pinturas",
-      "nombre": "Pintura",
-      "descripcion": "Una pintura",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Glass dome",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+         "precio": 1500,
+      "imagen": "../img/tienda/glass_dome.jpg"
     },
     {
       "id": 10,
       "categoria": "Pinturas",
-      "nombre": "Pintura",
-      "descripcion": "Una pintura",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Guazuncho",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+         "precio": 1500,
+      "imagen": "../img/tienda/guazuncho.jpg"
     },
     {
       "id": 11,
       "categoria": "Pinturas",
-      "nombre": "Pintura",
-      "descripcion": "Una pintura",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Helecho",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+         "precio": 1200,
+      "imagen": "../img/tienda/helecho_liquen_y_cuarzo_cristal.jpg"
     },
     {
       "id": 12,
       "categoria": "Pinturas",
-      "nombre": "Pintura",
-      "descripcion": "Una pintura",
-      "precio": 1,
-      "imagen": "../img/parquesNacionales/celtas.jpg"
+      "nombre": "Invierno",
+      "descripcion": "Esta es una descripcion del producto que puede incluir medidas, año, tecnica, formas de pago, etc.",
+         "precio": 100,
+      "imagen": "../img/tienda/invierno_con_cuarzos.jpg"
     }
   ]

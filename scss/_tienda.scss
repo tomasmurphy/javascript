@@ -8,27 +8,55 @@
 .card{
   background-color: $blanco;
 }
-
-.bloqueLogo{
-  width: 80%;
-  padding-left: 3rem; 
+.navbar-toggler{
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+  color: $azul;
+  outline: none;
+  text-decoration: unset;
+  background-color: $azul;
+}
+.navbar-toggler-icon{
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+  color: $blanco;
+  outline: none;
+  text-decoration: unset;
+  background-color: $azul;
 }
 .fondoCarrito{
-  background: green;
-  height: 100vh;
+  background: $blanco;
+  height: 90vh;
+  width: 88vw;
+  margin-top: .6rem;
+  @include desktop{
+    width: 50vw;
+  }
 }
 input{
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   opacity: 1;
   background-color: $azul;
   color: $blanco;
   border-radius: 1rem;
   outline: none;
+  @include desktop{
+    margin-top: 0;
+  margin-bottom: 0;
+  }
   
 }
 .activo{
-  opacity: 1;
+  opacity: .7;
 }
 .btn{
   background-color: $azul;
@@ -36,9 +64,21 @@ input{
   border-radius: 1rem;
   outline: none;
   &:hover{
-    opacity: .7;
+    color: $gris;
     outline: none;
     box-shadow: none;
+  }
+}
+.btnInfo{
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid $azul;
+  color: $azul;
+  font-weight: bold;
+  &:hover{
+    color: $gris;
   }
 }
 p{
@@ -88,6 +128,10 @@ p{
   justify-content: flex-end;
   flex-wrap: wrap;
   background-color: $blanco;
+  height: auto;
+  @include desktop{
+    height: auto;
+  }
   a {
     font-size: 1.2rem;
     font-style: normal;
@@ -128,6 +172,7 @@ nav {
   text-decoration: unset;
   color: $blanco;
   margin-right: 2rem;
+  width: auto;
   
   &:hover {
     opacity: .7;
@@ -157,7 +202,10 @@ nav {
   padding-right: 2rem;
   background: $azul;
 }
-
+.dropdown{
+  width: 10rem;
+  margin-left: 1rem;
+}
 }
 
 

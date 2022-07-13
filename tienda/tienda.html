@@ -35,12 +35,12 @@
 <body id="bodyTienda">
   <nav id="menu" class="fixed-top cajaNav navbar-dark navbar navbar-expand-md">
     <div class="burgerTop container-fluid mt-3 mt-md-0">
-      <div class="bloqueLogo">
+      <div class="">
         <div class="dropdown">
-          <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a id="btnCarrito">
             <i class="bi btn bi-cart-check fondo"> Carrito</i>
           </a>
-          <ul class="dropdown-menu fondoCarrito"  aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu fondoCarrito" id="abrirCarrito" aria-expanded="false" aria-labelledby="navbarDropdown">
             <div id="carrito" ></div>
             <li><p class="text-right">Total: $ <span id="total"></span>;</p></li>
             <li><button id="btnVaciar" class="btn">Vaciar</button></li>
@@ -58,13 +58,13 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="icono navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav sombra">
             <input type="button" id="btnEsculturas" class="btn activo" value="Esculturas">
-            <input type="button" id="btnPinturas" class="btn" value="Pinturas">
-            <input type="button" id="btnFotos" class="btn" value="Fotos">
+            <input type="button" id="btnPinturas" class="btn activo" value="Pinturas">
+            <input type="button" id="btnFotos" class="btn activo" value="Fotos">
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
 </div>
     <!-- SECCION -->
     <section id="tienda"> 
-      <div class="container-fluid mt-3">
+      <div class="container-fluid mt-5 mt-md-3">
         <div class="row">
           <div id="crearItems">
         </div>
