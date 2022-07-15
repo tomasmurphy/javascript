@@ -7,23 +7,29 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Paz Secundini - Parques nacionales</title>
-    <meta
-      name="description"
-      content="Serie de eculturas ceramicas en pequeño formato"
-    />
+    <title>Jardin de invierno - Tienda</title>
+    <meta name="description" content="Tienda de jardin de invierno" />
     <meta
       name="keywords"
       content="Esculturas, ceramica, pequeña formato, bellas artes, parques nacionales, sur, alaska, isladia"
     />
     <meta name="author" content="Tomás Murphy" />
     <meta name="copyright" content="Todos los derechos reservados" />
-    <meta property='og:type' content='article' />
-    <meta property='og:title' content='Parques nacionales' />
-    <meta property='og:description' content='Esculturas cerámicas en pequeño formato.' />
-    <meta property='og:image' content='https://pazsecundini.com.ar/img/parquesNacionales/un_parque_nacional_en_alaska.JPG' />
-    <meta property='og:url' content='https://pazsecundini.com.ar/proyectos/parquesNacionales.html' />
-    <meta property='og:site_name' content='Paz Secundini' />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Tienda" />
+    <meta
+      property="og:description"
+      content="Esculturas cerámicas en pequeño formato."
+    />
+    <meta
+      property="og:image"
+      content="https://pazsecundini.com.ar/img/parquesNacionales/un_parque_nacional_en_alaska.JPG"
+    />
+    <meta
+      property="og:url"
+      content="https://pazsecundini.com.ar/proyectos/parquesNacionales.html"
+    />
+    <meta property="og:site_name" content="Paz Secundini" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../css/main.css" />
     <link
@@ -32,56 +38,80 @@
       href="../img/index/pazsecundini4x4.png"
     />
   </head>
-<body id="bodyTienda">
-  <nav id="menu" class="fixed-top cajaNav navbar-dark navbar navbar-expand-md">
-    <div class="burgerTop container-fluid mt-3 mt-md-0">
-      <div class="">
-        <div class="dropdown">
-          <a id="btnCarrito">
-            <i class="bi btn bi-cart-check fondo"> Carrito</i>
-          </a>
-          <ul class="dropdown-menu fondoCarrito" id="abrirCarrito" aria-expanded="false" aria-labelledby="navbarDropdown">
-            <div id="carrito" ></div>
-            <li><p class="text-right">Total: $ <span id="total"></span>;</p></li>
-            <li><button id="btnVaciar" class="btn">Vaciar</button></li>
-            <li><button id="btnComprar" class="btn">Comprar</button></li>      
-              </ul>
-            </div>
-      </div>
-      <button
-        id="button"
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="icono navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav sombra">
-            <input type="button" id="btnEsculturas" class="btn activo" value="Esculturas">
-            <input type="button" id="btnPinturas" class="btn activo" value="Pinturas">
-            <input type="button" id="btnFotos" class="btn activo" value="Fotos">
+  <body id="bodyTienda">
+    <nav
+      id="menu"
+      class="fixed-top cajaNav navbar-dark navbar navbar-expand-md"
+    >
+      <div class="burgerTop container-fluid mt-3 mt-md-0">
+        <div class="">
+          <div class="dropdown">
+            <a id="btnCarrito">
+              <i class="bi btn bi-cart-check fondo"> Carrito</i>
+            </a>
+            <ul
+              class="dropdown-menu fondoCarrito"
+              id="abrirCarrito"
+              aria-expanded="false"
+              aria-labelledby="navbarDropdown"
+            >
+              <div id="carrito"></div>
+              <li>
+                <p class="text-right">Total: $ <span id="total"></span>;</p>
+              </li>
+              <li><button id="btnVaciar" class="btn">Vaciar</button></li>
+              <li><button id="btnComprar" class="btn">Comprar</button></li>
+            </ul>
+          </div>
+        </div>
+        <button
+          id="button"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="icono navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav sombra">
+            <input
+              type="button"
+              id="btnEsculturas"
+              class="btn activo"
+              value="Esculturas"
+            />
+            <input
+              type="button"
+              id="btnPinturas"
+              class="btn activo"
+              value="Pinturas"
+            />
+            <input
+              type="button"
+              id="btnFotos"
+              class="btn activo"
+              value="Fotos"
+            />
+          </div>
         </div>
       </div>
-    </div>
-  </nav>
-</div>
+    </nav>
     <!-- SECCION -->
-    <section id="tienda"> 
+    <section id="tienda">
       <div class="container-fluid mt-5 mt-md-3">
         <div class="row">
-          <div id="crearItems">
+          <div id="crearItems"></div>
         </div>
       </div>
-    </div>
     </section>
     <!-- SCRIPS  -->
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/sweetalert2.all.min.js"></script>
+    <script src="../js/email.min.js"></script>
     <script src="../js/tienda.js"></script>
-</body>
+  </body>
 </html>
